@@ -1,0 +1,6 @@
+Quando tentamos inserir um país que o nome já existe na base de dados, dá o seguinte erro:
+
+
+SqlException: Não é possível inserir linha de chave duplicada no objeto 'dbo.Countries' com índice exclusivo 'IX_Countries_Name'. O valor da chave duplicada é (Brasil).
+
+O motivo é termos inserido uma Unike Key no campo NOME do país que obriga não ter valores duplicados.
